@@ -1,8 +1,8 @@
-resource "aws_s3_bucket" "Jesus" {
-  bucket = "my-Jesus-bucket"
+resource "aws_s3_bucket" "jesus" {
+  bucket = "my-jesus-bucket"
 
   tags = {
-    Name        = "My Jesus bucket"
+    Name        = "My jesus bucket"
     Environment = "Dev"
   }
 }
