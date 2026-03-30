@@ -48,6 +48,9 @@ pipeline {
                             -input=false \
                             -var-file=environments/${params.ENVIRONMENT}.tfvars \
                             -out=tfplan
+                            echo "========== PLAN SUMMARY =========="
+                        terraform show -no-color tfplan
+                        echo "=================================="
                     """
                 }
             }
