@@ -10,6 +10,10 @@ pipeline {
         TF_IN_AUTOMATION = 'true'
     }
 
+        options {
+        ansiColor('xterm')
+    }
+
     triggers {
         pollSCM('H/2 * * * *')
     }
